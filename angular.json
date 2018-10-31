@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "av",
       "schematics": {},
       "architect": {
         "build": {
@@ -25,11 +25,13 @@
             "styles": [
               "node_modules/@clr/icons/clr-icons.min.css",
               "node_modules/@clr/ui/clr-ui.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/clarity/clarity-ui.min.css"
             ],
             "scripts": [
               "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
-              "node_modules/@clr/icons/clr-icons.min.js"
+              "node_modules/@clr/icons/clr-icons.min.js",
+              "src/clarity/clarity-icons.min.js"
             ]
           },
           "configurations": {
@@ -128,5 +130,14 @@
       }
     }
   },
-  "defaultProject": "av-admin"
+  "defaultProject": "av-admin",
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "av",
+      "styleext": "scss"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "av"
+    }
+  }
 }

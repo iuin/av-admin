@@ -1,5 +1,7 @@
+
 <div class="main-container">
     <layout-header></layout-header>
+    <div class="progress loop progress-bar" *ngIf="isFetching"><progress></progress></div>
     <div class="content-container">
         <div class="content-area">
             <layout-content></layout-content>

@@ -32,7 +32,7 @@ export class LayoutDefaultComponent implements OnInit {
             }
             setTimeout(() => {
                 this.isFetching = false;
-            }, 1500);
+            }, 1000);
           });
      }
 

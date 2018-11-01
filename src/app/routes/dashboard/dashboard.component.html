@@ -1,1 +1,136 @@
-dashboard works!
+<div class="row">
+    <div class="clr-col-md-3">
+        <div class="block-info">
+            <clr-icon shape="bell" class="is-solid"></clr-icon>
+            <span class="block-title">Title</span>
+            <div class="block-content">
+                <span>XXXXXXXXXXXXXX</span>
+                <span>XXXXXXX</span>
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-md-3">
+        <div class="block-info">
+            <clr-icon shape="bell" class="is-solid"></clr-icon>
+            <span class="block-title">Title</span>
+            <div class="block-content">
+                <span>XXXXXXXXXXXXXX</span>
+                <span>XXXXXXX</span>
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-md-3">
+        <div class="block-info">
+            <clr-icon shape="bell" class="is-solid"></clr-icon>
+            <span class="block-title">Title</span>
+            <div class="block-content">
+                <span>XXXXXXXXXXXXXX</span>
+                <span>XXXXXXX</span>
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-md-3">
+        <div class="block-info">
+            <clr-icon shape="bell" class="is-solid"></clr-icon>
+            <span class="block-title">Title</span>
+            <div class="block-content">
+                <span>XXXXXXXXXXXXXX</span>
+                <span>XXXXXXX</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="clr-col-md-6">
+        <div class="card">
+            <div class="card-header">
+                header
+            </div>
+            <div class="card-block">
+                block
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-md-6">
+        <div class="card">
+            <div class="card-header">
+                header
+            </div>
+            <div class="card-block">
+                block
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="clr-col-md-12">
+        <div class="card">
+            <div class="card-block">
+                <clr-tabs>
+                    <clr-tab>
+                        <button clrTabLink>Dashboard</button>
+                        <ng-template [(clrIfActive)]="dashboardActive">
+                            <clr-tab-content>
+                                1...
+                            </clr-tab-content>
+                        </ng-template>
+                    </clr-tab>
+
+                    <clr-tab>
+                        <button clrTabLink>Management</button>
+                        <ng-template [(clrIfActive)]="managementActive">
+                            <clr-tab-content>
+                                2...
+                            </clr-tab-content>
+                        </ng-template>
+                    </clr-tab>
+                </clr-tabs>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="clr-col-md-6">
+        <div class="card">
+            <div class="card-header">
+                header
+                <div class="card-header-right">
+                    <clr-dropdown>
+                        <clr-icon shape="ellipsis-vertical" clrDropdownTrigger></clr-icon>
+                        <clr-dropdown-menu clrPosition="bottom-right" *clrIfOpen>
+                            <label class="dropdown-header">Dropdown header</label>
+                            <button type="button" clrDropdownItem>Action 1</button>
+                            <button type="button" disabled clrDropdownItem>Disabled Action</button>
+                            <div class="dropdown-divider"></div>
+                            <button type="button" clrDropdownItem>Link 2</button>
+                        </clr-dropdown-menu>
+                    </clr-dropdown>
+                </div>
+            </div>
+            <div class="card-block">
+                block
+            </div>
+        </div>
+    </div>
+    <div class="clr-col-md-6">
+        <div class="card">
+            <div class="card-header">
+                header
+                <div class="card-header-right">
+                    <clr-signpost>
+                        <clr-signpost-content *clrIfOpen [clrPosition]="'bottom-left'">
+                            <span>Tooltip.</span>
+                        </clr-signpost-content>
+                    </clr-signpost>
+                </div>
+            </div>
+            <div class="card-block">
+                block
+            </div>
+        </div>
+    </div>
+</div>

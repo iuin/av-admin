@@ -13,7 +13,7 @@ import {
 } from '@angular/common/http';
 import { Observable, of, throwError } from 'rxjs';
 import { mergeMap, catchError } from 'rxjs/operators';
-import { AvHttpClient } from './http/http.client';
+import { AvHttpClient } from '../http/http.client';
 
 @Injectable()
 export class DefaultInterceptor implements HttpInterceptor {

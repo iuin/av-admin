@@ -1,10 +1,17 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
-import { InMemoryDataService } from './mock/in-memory-data.service';
+
+import { httpInterceptorProviders } from './net/interceptor';
+import { AvHttpClient } from './net/http';
+
+const COMMON = [
+    httpInterceptorProviders,
+    AvHttpClient
+];
 
 @NgModule({
-    imports: [SharedModule],
-    providers: [InMemoryDataService],
+    imports: [ SharedModule ],
+    providers: [...COMMON],
 })
 export class CoreModule {
     constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

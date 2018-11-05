@@ -4,6 +4,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ClarityModule } from '@clr/angular';
 
+import { WizardMaximizedDirective } from './directives/wizard-maximized/wizard-maximized';
+
 const COMMON = [
     CommonModule,
     ReactiveFormsModule,
@@ -12,10 +14,14 @@ const COMMON = [
     ClarityModule
 ];
 
+const DIRECTIVES = [
+    WizardMaximizedDirective
+];
+
 @NgModule({
-    declarations: [],
+    declarations: [...DIRECTIVES],
     imports: [ ...COMMON ],
-    exports: [ ...COMMON ],
+    exports: [ ...COMMON, ...DIRECTIVES ],
     providers: [],
 })
 export class SharedModule {}

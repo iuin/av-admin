@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { ClarityModule } from '@clr/angular';
 
 import { WizardMaximizedDirective } from './directives/wizard-maximized/wizard-maximized';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 const COMMON = [
     CommonModule,
@@ -19,7 +20,7 @@ const DIRECTIVES = [
 ];
 
 @NgModule({
-    declarations: [...DIRECTIVES],
+    declarations: [...DIRECTIVES, BreadcrumbComponent],
     imports: [ ...COMMON ],
     exports: [ ...COMMON, ...DIRECTIVES ],
     providers: [],

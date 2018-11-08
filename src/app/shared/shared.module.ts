@@ -6,6 +6,7 @@ import { ClarityModule } from '@clr/angular';
 
 import { WizardMaximizedDirective } from './directives/wizard-maximized/wizard-maximized';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { CardToggleDirective } from './directives/card-toggle/card-toggle.directive';
 
 const COMMON = [
     CommonModule,
@@ -16,7 +17,8 @@ const COMMON = [
 ];
 
 const DIRECTIVES = [
-    WizardMaximizedDirective
+    WizardMaximizedDirective,
+    CardToggleDirective
 ];
 
 @NgModule({

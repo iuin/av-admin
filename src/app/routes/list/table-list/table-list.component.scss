@@ -1,0 +1,17 @@
+div.pagination-list{
+    button.pagination-previous {
+        clr-icon {
+            display: none;
+        }
+    }
+    button.pagination-next {
+        clr-icon {
+            display: none;
+        }
+    }
+}
+button.pagination-next {
+    clr-icon {
+        display: none;
+    }
+}
